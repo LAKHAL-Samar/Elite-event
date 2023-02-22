@@ -1,31 +1,26 @@
 .header .header-1 {
-   background: #fff;
+   background-image:url("/assets/image/pinki2.jpg");
    padding: 1.5rem 9%;
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
 
-.header .header-1 .logo {
-   font-size: 2.5rem;
-   font-weight: bolder;
-   color: var(--black);
-   text-decoration: none;
-}
 
-.header .header-1 .logo i {
-   color: var(--green);
-}
 
 .header .header-1 .search-form {
    width: 50rem;
    height: 5rem;
    border: var(--border);
    overflow: hidden;
-   background: #fff;
+   background: #2ceeea;
    display: flex;
    align-items: center;
    border-radius: .5rem;
+   background-color: #82d0cf;
+   
+   box-shadow: 0 10px 40px #0f0e0f, 0 0 0 15px #ffffffeb;
+  
 }
 
 .header .header-1 .search-form input {
@@ -45,7 +40,7 @@
 }
 
 .header .header-1 .search-form label:hover {
-   color: var(--green);
+   color: #f7b0e5;
 }
  
 .header .header-1 .icons div,
@@ -59,7 +54,7 @@
 
 .header .header-1 .icons div:hover,
 .header .header-1 .icons a:hover {
-   color: var(--green);
+   color: #f7b0e5;
 }
 
 #search-btn {
@@ -67,13 +62,14 @@
 }
 
 .header .header-2 {
-   background: var(--green);
+   background: #82d0cf;
    text-decoration: none;
+   color: #ffffff;
 }
 
 .header .header-2 .dropbtn {
-   background-color: #27ae60;
-   color: white;
+   background-color: #82d0cf;
+   color: #f9f4f4;
    padding: 16px;
    font-size: 16px;
    border: none;
@@ -88,7 +84,7 @@
 .header .header-2 .dropdown-content {
    display: none;
    position: absolute;
-   background-color: #27ae60;
+   background-color: #f7b0e5;
    min-width: 160px;
    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
    z-index: 1;
@@ -96,14 +92,14 @@
 }
 
 .header .header-2 .dropdown-content a {
-   color: black;
+   color: rgb(255, 254, 254);
    padding: 12px 16px;
    text-decoration: none;
    display: block;
 }
 
 .header .header-2 .dropdown-content a:hover {
-   background-color: #219150;
+   background-color: #f7b0e5;
 }
 
 .header .header-2 .dropdown:hover .dropdown-content {
@@ -111,7 +107,7 @@
 }
 
 .header .header-2 .dropdown:hover .dropbtn {
-   background-color: #219150;
+   background-color: #f7b0e5;
 }
 
 .header .header-2 .nav_bar {
@@ -119,7 +115,7 @@
 }
 
 .header .header-2 .nav_bar a {
-   color: #fff;
+   color: #ffffff;
    display: inline-block;
    padding: 1.2rem;
    font-size: 1.7rem;
@@ -127,7 +123,7 @@
 }
 
 .header .header-2 .nav_bar a:hover {
-   background: var(--dark-color);
+   background:#f7b0e5;
 }
 
 .header .header-2.active {
@@ -141,7 +137,7 @@
 
 .bottom-navbar {
    text-align: center;
-   background: var(--green);
+   background: #82d0cf;
    position: fixed;
    bottom: 0;
    left: 0;
@@ -270,7 +266,7 @@ nav ul li ul {
 
 
 .total {
-   background: #219150;
+   background: #82d0cf;
    line-height: 30px;
    color: white;
    border-radius: 30px;
