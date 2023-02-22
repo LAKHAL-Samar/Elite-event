@@ -2,7 +2,8 @@
 
     <div class="header-1">
 
-        <a routerLink="/" class="logo"> <i class="fas fa-book"></i> bookly </a>
+        <img src="/assets/image/logo (2).png" alt="" style="width:180px;height:120px;">
+
 
         <div class="search-form" id="searchForm">
             <input #myInput type="search" placeholder="search here..." (keyup.enter)="doSearch(myInput.value)">
@@ -28,7 +29,7 @@
         <nav class="nav_bar">
             <a href="#home">home</a>
             <div class="dropdown">
-                <button class="dropbtn">Categories<i class="fa fa-caret-down"></i></button>
+                <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content">
                     <div class="row" *ngFor="let booksCategory of booksCategories">
                         <div class="column" >
@@ -37,10 +38,11 @@
                     </div>
                 </div>
             </div>
-            <a href="#featured">featured</a>
-            <a href="#arrivals">arrivals</a>
-            <a href="#reviews">reviews</a>
-            <a href="#blogs">blogs</a>
+           
+            <a href="#blogs">Events</a>
+            <a href="#arrivals">Reviews</a>
+            <a href="#reviews">subscribe</a>
+            
         </nav>
 
     </div>
