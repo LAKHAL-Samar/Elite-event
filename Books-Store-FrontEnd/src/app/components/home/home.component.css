@@ -1,4 +1,3 @@
-
 .icons-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -29,7 +28,7 @@
 }
 
 .newsletter {
-    background: url(/assets/image/letter-bg.jpg) no-repeat; 
+    background: url(/assets/image/email.jpg) no-repeat; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

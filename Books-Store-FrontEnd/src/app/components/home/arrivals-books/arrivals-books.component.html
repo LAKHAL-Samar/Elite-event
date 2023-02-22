@@ -1,22 +1,162 @@
-<section class="arrivals" id="arrivals">
+<body>
+    
 
-    <h1 class="heading"> <span>new arrivals</span> </h1>
-
-    <swiper [config]="config" class="swiper arrivals-slider">
-
-        <div class="swiper-wrapper">
-
-            <a class="swiper-slide box" *ngFor="let arrivalBook of arrivalBooks1">
-                <div class="image" routerLink="/product/{{arrivalBook.id}}">
-                    <img src="{{arrivalBook.image_url}}" alt="">
-                </div>
-                <div class="content" routerLink="/product/{{arrivalBook.id}}">
-                    <h3>{{arrivalBook.title}}</h3>
-                    <div class="price">
-                        ${{(arrivalBook.price-(arrivalBook.discount*arrivalBook.price/100)).toFixed(2)}}
-                        %{{arrivalBook.discount}}
-                        <span>${{arrivalBook.price}}</span>
+    <section class="about" id="about" >
+        
+        <div class="row">
+    
+            <div class="img-container">
+                <img src="assets/image/ABCD.png">
+                
+            </div>
+    
+            <div class="content" >
+                <h3>Our story <span>&hearts;</span></h3>
+                <p>Who are we ?!.</p>
+                <p>Moreover, Lorem isit amet consectetur, adipisicing elipsum dolor sit amet consectetur, adipisicing elit.
+                    Lorsssem ipsum dolor sit amet consectetur, adipisicing elit. Enim volupipsum dolor sit amet co tatem quidem obcaeca
+                    Lorrtytem ipsum dolor syaahtret amet conseEnim voluptatem quidem ctetur, adipisicing elit. Enim voluptatem quidem obcaeca
+                    Lorlllem ipsum dolor consectetur, adipisicing elit. Enim voluptatem quidem obcaeca Enim voluptatem quidem obcaecati minus corrupti quam veritatis numquam ducimus sit quis sequi suscipit ullam vitae labore nisi, voluptate cupiditate aperiam accusantium!</p>
+                
+                <a href="#contact" class="buttons">learn more</a>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    
+    
+    
+    <!--********************************************************************************************** -->
+    
+    
+    <section class="blogs" id="blogs">
+    
+    
+    
+    
+    <section class="blogs" id="blogs">
+    
+        <h1 class="titles"> <span>Meet our team</span> </h1>
+    
+        <swiper [config]="config" class="swiper blogs-slider">
+    
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="assets/image/team-1.jpg" alt="">
                     </div>
+                    <div class="content">
+                        <h3>client service</h3>
+    
+                        <P>Mr Monther</P>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="assets/image/team-3.jpg" alt="">
+                    </div>
+                    <div class="content">
+    
+                        <h3>Website Manager </h3>
+                         
+                        <P>Mr Elborni</P>
+    
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+    
+    
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="assets/image/team-4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Content Producer</h3>
+                        
+                        <p>Ms salha</p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="assets/image/team-5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Developer</h3>
+                        <p>Mr imad</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="assets/image/team-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Designer</h3>
+                        <p>Ms laila</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </swiper>
+    
+    </section>
+    
+    <section class="contact" id="contact" >
+    
+        <h1 class="titles"> <span> contact </span> us </h1>
+    
+        <div class="row">
+    
+            <form >
+                <input type="text" placeholder="First name" class="box">
+                <input type="text" placeholder="Last name" class="box">
+                <input type="email" placeholder="Email" class="box">
+                <input type="number" placeholder="Phone number" class="box">
+                <input type="text" placeholder="Address" class="box">
+                <input type="text" placeholder="Subject" class="box">
+                <textarea  class="box" placeholder="Message"  cols="30" rows="5"></textarea>
+                <input type="submit" value="send message" class="buttons">
+                
+            </form>
+    
+            <div class="image">
+                <img src="assets/image/pr.png" >
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <section class="reviews" id="reviews">
+    
+        <h1 class="titles"> <span>client's reviews</span> </h1>
+    
+        <swiper [config]="config" class="swiper reviews-slider">
+    
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide box">
+                    <img src="assets/image/pic-1.png" alt="">
+                    <h3>Mr Hassan</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at
+                        sint, eos ex similique facere hic.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -25,25 +165,25 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                 </div>
-            </a>
-        </div>
-    </swiper>
-
-    <swiper [config]="config" class="swiper arrivals-slider">
-
-        <div class="swiper-wrapper">
-
-            <a class="swiper-slide box" *ngFor="let arrivalBook of arrivalBooks2">
-                <div class="image" routerLink="/product/{{arrivalBook.id}}">
-                    <img src="{{arrivalBook.image_url}}" alt="">
-                </div>
-                <div class="content" routerLink="/product/{{arrivalBook.id}}">
-                    <h3>{{arrivalBook.title}}</h3>
-                    <div class="price">
-                        ${{(arrivalBook.price-(arrivalBook.discount*arrivalBook.price/100)).toFixed(2)}}
-                        %{{arrivalBook.discount}}
-                        <span>${{arrivalBook.price}}</span>
+    
+                <div class="swiper-slide box">
+                    <img src="assets/image/pic-2.png" alt="">
+                    <h3>Ms Salma</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at
+                        sint, eos ex similique facere hic.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="assets/image/pic-3.png" alt="">
+                    <h3>Mr Omar</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at
+                        sint, eos ex similique facere hic.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -52,7 +192,49 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                 </div>
-            </a>
-        </div>
-    </swiper>
-</section>
+                <div class="swiper-slide box">
+                    <img src="assets/image/pic-4.png" alt="">
+                    <h3>Mr ali</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at
+                        sint, eos ex similique facere hic.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="assets/image/pic-5.png" alt="">
+                    <h3>Mr mahrous</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at
+                        sint, eos ex similique facere hic.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="assets/image/pic-6.png" alt="">
+                    <h3>Ms oumaima</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at
+                        sint, eos ex similique facere hic.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+    
+        </swiper>
+    
+    </section>
+    
+    

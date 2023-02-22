@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
 :root {
     --green: #27ae60;
     --dark-color: #219150;
@@ -77,16 +76,30 @@ section {
     padding: .9rem 3rem;
     border-radius: .5rem;
     color: #fff;
-    background: var(--green);
+    background:#15a3a0;
     font-size: 1.7rem;
     cursor: pointer;
     font-weight: 500;
 }
 
 .btn:hover {
-    background: var(--dark-color);
+    background:#f7b0e5;
+}
+.btn1 {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background:#eb5397;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
 }
 
+.btn:hover {
+    background:#15a3a0;
+}
 
 
 
@@ -116,7 +129,6 @@ section {
 .loader-container img {
     height: 10rem;
 }
-
 
 
 
@@ -209,3 +221,4 @@ section {
     }
 
 }
+

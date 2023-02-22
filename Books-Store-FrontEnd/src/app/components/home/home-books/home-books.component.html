@@ -1,20 +1,157 @@
-<section class="home" id="home">
-
-    <div class="row">
-  
-        <div class="content">
-            <h3>upto 75% off</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deserunt nostrum accusamus. Nam alias sit necessitatibus, aliquid ex minima at!</p>
-            <a href="#" class="btn">shop now</a>
-        </div>
-        <swiper [config]="config" class="swiper books-slider">
-            
-            <div class="swiper-wrapper">
-                <a routerLink="/product/{{discountedBook.id}}" class="swiper-slide" *ngFor="let discountedBook of discountedBooks"><img src="{{discountedBook.image_url}}" alt=""></a>
+<body > 
+    <section class="home" id="home">
+    
+        <div class="row">
+      
+            <div class="content">
+                <h3 id="h31">Perfect Event</h3>
+                <h3 id="h32">Made Easy!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deserunt nostrum accusamus. Nam alias sit necessitatibus, aliquid ex minima at!</p>
+                <a href="#" class="btn">view our services</a>
+                
             </div>
-            <img src="assets/image/stand.png" class="stand" alt="">
+            <swiper [config]="config" class="swiper books-slider">
+                
+                <div class="swiper-wrapper">
+                    <a routerLink="/product/{{discountedBook.id}}" class="swiper-slide" *ngFor="let discountedBook of discountedBooks"><img src="{{discountedBook.image_url}}" alt=""></a>
+                </div>
+                <img src="/assets/image/im.png" alt="" style="width:500px;height:450px;">
+            </swiper>
+        </div>
+    
+      
+      </section>
+      <section class="about" id="about" >
+    
+     
+    
+     
+    
+        <div class="row">
+    
+     
+    
+            <div class="video-container">
+    
+                <video src="/assets/image/v.mp4" loop autoplay muted></video>
+    
+                <h3>Elite Events </h3>
+    
+            </div>
+    
+     
+    
+            <div class="content" >
+    
+                <h1 id="h11">what we offer </h1>
+                <h1 id="h12"> we ofer with love  </h1>
+    
+                <p>Our cakes are healthy, tasty and made with the best ingredients.</p>
+    
+                <p>Moreover, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptatem quidem obcaecati minus corrupti quam veritatis numquam ducimus sit quis sequi suscipit ullam vitae labore nisi, voluptate cupiditate aperiam accusantium!</p>
+    
+               
+    
+                <a href="#contact" class="buttons">learn more</a>
+    
+            </div>
+    
+     
+    
+        </div>
+    
+     
+    
+    </section>
+    <section class="home" id="home">
+    
+        <div class="row">
+      
+            <div class="content">
+                <h3 id="h111">Includes various</h3>
+                <h3 id="h112">product categories</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deserunt nostrum accusamus. Nam alias sit necessitatibus, aliquid ex minima at!</p>
+                <a href="#" class="btn">see more</a>
+                
+            </div>
+            <swiper [config]="config" class="swiper books-slider">
+                
+                <div class="swiper-wrapper">
+                    <a routerLink="/product/{{discountedBook.id}}" class="swiper-slide" *ngFor="let discountedBook of discountedBooks"><img src="{{discountedBook.image_url}}" alt=""></a>
+                </div>
+                <img src="/assets/image/photo.png" alt="" style="width:600px;height:600px;">
+            </swiper>
+        </div>
+    
+      
+      </section>
+      <section class="blogs" id="blogs">
+    
+        <h1 class="heading"> <span>our Events</span> </h1>
+    
+        <swiper [config]="config" class="swiper blogs-slider">
+    
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="assets/image/evn5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>graduation party</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn1">read more</a>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="assets/image/evn4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>birthday party</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn1">read more</a>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="assets/image/evn3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>conference</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn1">read more</a>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="assets/image/evn1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>wedding party</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn1">read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="assets/image/evn2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>festival</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odio.</p>
+                        <a href="#" class="btn1">read more</a>
+                    </div>
+                </div>
+    
+            </div>
+    
         </swiper>
-    </div>
-  
-  </section>
-  
+    
+    </section>
+    </body>  
+    
+    

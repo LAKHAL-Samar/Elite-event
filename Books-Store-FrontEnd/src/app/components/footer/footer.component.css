@@ -1,40 +1,13 @@
-.footer .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
+
+*{
+    background-image:url("/assets/image/pinki.jpg");
+    background-size: contain;
+    Box-sizing: border-box;
 }
 
-.footer .box-container .box h3 {
-
-    font-size: 2.2rem;
-    color: var(--black);
-    padding: 1rem 0;
-}
-
-.footer .box-container .box a {
-    text-decoration: none;
-    display: block;
-    font-size: 1.4rem;
-    color: var(--light-color);
-    padding: 1rem 0;
-}
-
-.footer .box-container .box a i {
-    color: var(--green);
-    padding-right: .5rem;
-}
-
-.footer .box-container .box a:hover i {
-    padding-right: 2rem;
-}
-
-.footer .box-container .box .map {
-    width: 100%;
-}
-
-.footer .box-container .box .email {
-    text-transform: lowercase;
-}
+h3 {
+    text-align: center;
+    color: #27020e; font-family: "Great Vibes", cursive; font-size: 65px; line-height: 160px; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #fff;}
 
 .footer .share {
     padding: 1rem 0;
@@ -43,18 +16,18 @@
 
 .footer .share a {
     text-decoration: none;
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
+    height: 10rem;
+    width: 10rem;
+    line-height: 10rem;
+    font-size: 4rem;
     color: #fff;
-    background: var(--green);
-    margin: 0 .3rem;
-    border-radius: 50%;
+    background: #82d0cf;
+    margin: 1rem;
+    border-radius: 100%;
 }
 
 .footer .share a:hover {
-    background: var(--black);
+    background: #f7b0e5;
 }
 
 .footer .credit {
@@ -68,5 +41,6 @@
 }
 
 .footer .credit span {
-    color: var(--green);
+    color: #82d0cf;
 }
+
