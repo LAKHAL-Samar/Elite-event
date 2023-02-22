@@ -1,0 +1,54 @@
+<div class="login-form-container">
+    <form>
+        <div class="subform1" *ngIf="cartItems.length > 0">
+            <div class="subform21">
+                <h3>Cart Details</h3>
+                <div *ngFor="let cartItem of cartItems">
+                    <div class="subform3">
+                        <div class="productImage" routerLink="/product/{{cartItem.id}}"><img class="img-fluid"
+                                src="{{cartItem.image_url}}"></div>
+                        <div class="productData">
+                            <span>{{cartItem.title}}</span>
+                            <span>Book Price : {{cartItem.price.toFixed(2)}}</span>
+                            <span>Total Quantity : {{cartItem.quantity}}</span>
+                            <span>Discount : {{cartItem.discount}}%</span>
+                            <span>Total Price :
+                                {{((cartItem.quantity*cartItem.price)/100*(100-cartItem.discount)).toFixed(2)}}</span>
+                        </div>
+                        <div class="productControl">
+                            <div class="productControl-btn">
+                                <a *ngIf="cartItem.quantity>1" (click)="decrementQuantity(cartItem)" class="bt">-</a><a
+                                    class="quantity"> {{cartItem.quantity}} </a><a (click)="addToCart(cartItem)"
+                                    class="bt">+</a>
+                            </div>
+                            <br>
+                            <span (click)="removeFromCart(cartItem)"> remove</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="subform22">
+                <h3>Summary</h3>
+                <span>ITEMS {{totalQuantity}}</span>
+                <span>Total Order Price : {{totalPrice.toFixed(2)}} &euro; </span>
+                <span>SHIPPING</span>
+                <select class="box">
+                    <option value="1">Standard-Delivery- &euro;5.00</option>
+                </select>
+
+                <span>GIVE CODE</span>
+                <input type="text" name="" class="box" placeholder="Enter your code" id="">
+
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="remember-me">
+                    <label for="remember-me"> Shipping Address same as Billing Address</label>
+                </div>
+                <input type="submit" value="Purchase" class="btn" routerLink="/checkout">
+            </div>
+        </div>
+        <div *ngIf="cartItems.length == 0">
+            <h3>The Cart Is Empty</h3>
+        </div>
+    </form>
+</div>

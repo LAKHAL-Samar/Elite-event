@@ -1,0 +1,34 @@
+<div class="card-body">
+    <div class="pageContainer">
+        <div class="subform1">
+            <div class="product-gallery">
+                <div class="product-gallery-featured">
+                    <img src="{{bookDetails.image_url}}" alt="">
+                </div>
+            </div>
+            <div class="product-details">
+                <h3>{{bookDetails.title}}</h3>
+                <h2 class="by">By: {{bookDetails.publisher_name}}</h2>
+                <br />
+                <h2>Book Information</h2>
+                <span>Category: {{bookDetails.category}}</span>
+                <span>Book isbn13 : {{bookDetails.isbn13}}</span>
+                <span>Book language : {{bookDetails.language_name}}</span>
+                <span>publication date : {{bookDetails.publication_date| date : 'yyyy-MM-dd'}}</span>
+                <span>Book num of pages : {{bookDetails.num_pages}}</span>
+                <br>
+                <h2>Description</h2>
+                <span>{{bookDetails.description}}</span>
+                <br />
+                <h2>Price</h2>
+                <span>${{((bookDetails.price)/100*(100-bookDetails.discount)).toFixed(2)}}
+                    %{{bookDetails.discount}} ${{bookDetails.price}}</span>
+                <br />
+                <span for="quant">Quantity : </span>
+                <input #quantity type="number" name="quantity" min="1" placeholder="1" value="1"  class="box"/>
+                <br />
+                <div (click)="addtoCart(bookDetails,quantity.value)" class="btn btn-primary btn-lg btn-block">Buy Now</div>
+            </div>
+        </div>
+    </div>
+</div>
