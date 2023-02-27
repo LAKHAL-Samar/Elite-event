@@ -8,6 +8,7 @@
     border: var(--border-hover);
 }
 
+
 .blogs .blogs-slider .box .image {
     height: 25rem;
     width: 100%;
@@ -39,3 +40,4 @@
     padding: 1rem 0;
     line-height: 2;
 }
+

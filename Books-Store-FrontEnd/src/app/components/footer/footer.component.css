@@ -7,7 +7,7 @@
 
 h3 {
     text-align: center;
-    color: #27020e; font-family: "Great Vibes", cursive; font-size: 65px; line-height: 160px; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #fff;}
+    color: #27020e; font-size: 40px; line-height: 160px; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #fff;}
 
 .footer .share {
     padding: 1rem 0;
@@ -27,7 +27,7 @@ h3 {
 }
 
 .footer .share a:hover {
-    background: #f7b0e5;
+    background: #b75966;
 }
 
 .footer .credit {
