@@ -18,26 +18,18 @@
     </div>
 
     <div class="header-2">
+        <div class="header-2">
   
-        <nav class="nav_bar">
-            <a href="#home">home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
-                <div class="dropdown-content">
-                    <div class="row" *ngFor="let booksCategory of booksCategories">
-                        <div class="column" >
-                            <a routerLink="category/{{booksCategory.id}}">{{booksCategory.category_name}}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-            <a href="#blogs">Events</a>
-            <a href="#arrivals">Reviews</a>
-            <a href="#reviews">Our work</a>
-            
-        </nav>
-
+            <nav class="nav_bar">
+                <a href="#home">home</a>
+                <a href="#services">Services</a>
+                <a href="#blogs">Events</a>
+                <a href="#arrivals">Reviews</a>
+                <a href="#reviews">Our work</a>
+    
+            </nav>
+    
+        </div>
     </div>
 
 </header>
