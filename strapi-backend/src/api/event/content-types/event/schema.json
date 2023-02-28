@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phonenumber": {
+      "type": "biginteger"
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "adresse": {
+      "type": "string"
+    },
+    "sujet": {
+      "type": "string"
+    }
+  }
+}

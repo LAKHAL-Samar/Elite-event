@@ -34,6 +34,7 @@ const routes: Routes = [
   { path: 'category', component: HomeComponent },
   { path: 'reviews', component: ArrivalsBooksComponent},
   { path: 'ourwork', component: BolgsHomeComponent},
+  { path: 'services', component: FeaturedBooksComponent},
   { path: '', component: HomeComponent },
   { path: '**', component: HomeComponent }
 ];

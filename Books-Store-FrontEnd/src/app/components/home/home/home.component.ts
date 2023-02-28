@@ -4,7 +4,7 @@ import { FeaturedBooksService } from 'src/app/service/featured-books.service';
 import { SwiperOptions } from 'swiper/types/swiper-options';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-homeevent',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
