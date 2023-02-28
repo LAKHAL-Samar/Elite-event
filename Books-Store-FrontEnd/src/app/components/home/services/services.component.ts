@@ -7,9 +7,9 @@ import { ToastService } from 'src/app/service/toast.service';
 import { SwiperOptions } from 'swiper/types/swiper-options';
 
 @Component({
-  selector: 'app-featured-books',
-  templateUrl: './featured-books.component.html',
-  styleUrls: ['./featured-books.component.css']
+  selector: 'app-services',
+  templateUrl: './services.component.html',
+  styleUrls: ['./services.component.css']
 })
 export class FeaturedBooksComponent implements OnInit {
 

@@ -4,9 +4,9 @@ import { FeaturedBooksService } from 'src/app/service/featured-books.service';
 import { SwiperOptions } from 'swiper/types/swiper-options';
 
 @Component({
-  selector: 'app-home-books',
-  templateUrl: './home-books.component.html',
-  styleUrls: ['./home-books.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
 export class HomeBooksComponent implements OnInit {
   discountedBooks: Books[] = [];

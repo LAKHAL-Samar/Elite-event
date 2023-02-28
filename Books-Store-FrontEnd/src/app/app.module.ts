@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { FeaturedBooksComponent } from './components/home/featured-books/featured-books.component';
+import { FeaturedBooksComponent } from './components/home/services/services.component';
 import { HttpClientModule } from '@angular/common/http'
 import { FeaturedBooksService } from './service/featured-books.service';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
-import { HomeBooksComponent } from './components/home/home-books/home-books.component';
-import { ArrivalsBooksComponent } from './components/home/arrivals-books/arrivals-books.component';
+import { HomeBooksComponent } from './components/home/home/home.component';
+import { ArrivalsBooksComponent } from './components/home/reviews/reviews.component';
 import { ReviewsHomeComponent } from './components/home/reviews-home/reviews-home.component';
-import { BolgsHomeComponent } from './components/home/bolgs-home/bolgs-home.component';
+import { BolgsHomeComponent } from './components/home/ourwork/ourwork.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -32,6 +32,8 @@ const routes: Routes = [
   { path: 'search/:keyword', component: SearchResultsComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'category', component: HomeComponent },
+  { path: 'reviews', component: ArrivalsBooksComponent},
+  { path: 'ourwork', component: BolgsHomeComponent},
   { path: '', component: HomeComponent },
   { path: '**', component: HomeComponent }
 ];

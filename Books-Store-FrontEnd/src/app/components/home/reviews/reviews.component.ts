@@ -4,9 +4,9 @@ import { FeaturedBooksService } from 'src/app/service/featured-books.service';
 import { ToastService } from 'src/app/service/toast.service';
 import { SwiperOptions } from 'swiper';
 @Component({
-  selector: 'app-arrivals-books',
-  templateUrl: './arrivals-books.component.html',
-  styleUrls: ['./arrivals-books.component.css']
+  selector: 'app-reviews',
+  templateUrl: './reviews.component.html',
+  styleUrls: ['./reviews.component.css']
 })
 export class ArrivalsBooksComponent implements OnInit {
   arrivalBooks1: Books[] = [];

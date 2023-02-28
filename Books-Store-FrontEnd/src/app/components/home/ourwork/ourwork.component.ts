@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { SwiperOptions } from 'swiper';
 
 @Component({
-  selector: 'app-bolgs-home',
-  templateUrl: './bolgs-home.component.html',
-  styleUrls: ['./bolgs-home.component.css']
+  selector: 'app-ourwork',
+  templateUrl: './ourwork.component.html',
+  styleUrls: ['./ourwork.component.css']
 })
 export class BolgsHomeComponent implements OnInit {
 
