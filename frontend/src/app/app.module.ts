@@ -24,6 +24,7 @@ import { ToastsContainer } from './components/toast/toast.component';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 const routes: Routes = [
   { path: 'product-details', component: CartDetailsComponent },
@@ -63,7 +64,8 @@ const routes: Routes = [
     HttpClientModule,
     NgxUsefulSwiperModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [
     FeaturedBooksService,
