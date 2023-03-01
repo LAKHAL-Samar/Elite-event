@@ -12,25 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "firstname": {
+    "firstName": {
       "type": "string"
     },
-    "lastname": {
+    "lastName": {
       "type": "string"
     },
     "email": {
       "type": "email"
     },
-    "phonenumber": {
+    "phone": {
       "type": "biginteger"
     },
     "message": {
       "type": "richtext"
     },
-    "adresse": {
+    "address": {
       "type": "string"
     },
-    "sujet": {
+    "subject": {
       "type": "string"
     }
   }

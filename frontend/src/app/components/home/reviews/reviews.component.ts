@@ -3,6 +3,8 @@ import { Books } from 'src/app/model/books';
 import { FeaturedBooksService } from 'src/app/service/featured-books.service';
 import { ToastService } from 'src/app/service/toast.service';
 import { SwiperOptions } from 'swiper';
+import { FormControl, FormGroup } from '@angular/forms'
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-reviews',
   templateUrl: './reviews.component.html',
@@ -11,12 +13,35 @@ import { SwiperOptions } from 'swiper';
 export class ArrivalsBooksComponent implements OnInit {
   arrivalBooks1: Books[] = [];
   arrivalBooks2: Books[] = [];
-  constructor(private featuredBooksService: FeaturedBooksService) { }
+
+  eventForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+    email: new FormControl(''),
+    phone: new FormControl(''),
+    address: new FormControl(''),
+    subject: new FormControl(''),
+    message: new FormControl('')
+  });
+
+  constructor(private featuredBooksService: FeaturedBooksService,
+    private _httpClient: HttpClient, public toastService: ToastService) { }
 
   ngOnInit(): void {
     this.ArrivalsBooksList(0);
     this.ArrivalsBooksList(1);
   }
+
+  sendEvent() {
+    this._httpClient.post('http://localhost:1337/api/events',{ data: this.eventForm.value}).subscribe({
+      next: () => { 
+        this.toastService.show('Your event added successfuly', { classname: 'bg-success text-light ', delay: 5000 });
+      }, error: () => {
+        this.toastService.show("There is a error in your request", {classname: 'bg-danger text-light ', delay: 5000 })
+      }
+    });
+  }
+
   ArrivalsBooksList(num: number) {
     this.featuredBooksService.getArrivalBooksList(num).subscribe(
       data => {
@@ -30,7 +55,7 @@ export class ArrivalsBooksComponent implements OnInit {
 
   }
 
- 
+
   config: SwiperOptions = {
     spaceBetween: 30,
     loop: true,

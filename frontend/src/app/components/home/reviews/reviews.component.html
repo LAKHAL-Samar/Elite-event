@@ -124,14 +124,14 @@
     
         <div class="row">
     
-            <form >
-                <input type="text" placeholder="First name" class="box">
-                <input type="text" placeholder="Last name" class="box">
-                <input type="email" placeholder="Email" class="box">
-                <input type="number" placeholder="Phone number" class="box">
-                <input type="text" placeholder="Address" class="box">
-                <input type="text" placeholder="Subject" class="box">
-                <textarea  class="box" placeholder="Message"  cols="30" rows="5"></textarea>
+            <form [formGroup]="eventForm" (ngSubmit)="sendEvent()">
+                <input type="text" formControlName="firstName" placeholder="First name" class="box">
+                <input type="text" formControlName="lastName" placeholder="Last name" class="box">
+                <input type="email" formControlName="email" placeholder="Email" class="box">
+                <input type="number" formControlName="phone" placeholder="Phone number" class="box">
+                <input type="text" formControlName="address" placeholder="Address" class="box">
+                <input type="text" formControlName="subject" placeholder="Subject" class="box">
+                <textarea  class="box" formControlName="message" placeholder="Message"  cols="30" rows="5"></textarea>
                 <input type="submit" value="send message" class="buttons">
                 
             </form>
