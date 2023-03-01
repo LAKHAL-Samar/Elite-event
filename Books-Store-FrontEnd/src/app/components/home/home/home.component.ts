@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Books } from 'src/app/model/books';
 import { FeaturedBooksService } from 'src/app/service/featured-books.service';
 import { SwiperOptions } from 'swiper/types/swiper-options';
@@ -10,7 +11,8 @@ import { SwiperOptions } from 'swiper/types/swiper-options';
 })
 export class HomeBooksComponent implements OnInit {
   discountedBooks: Books[] = [];
-  constructor(private featuredBooksService: FeaturedBooksService) { }
+  constructor(private featuredBooksService: FeaturedBooksService,
+    private router : Router) { }
 
   ngOnInit(): void {
     this.DiscountedBooksList();
@@ -42,4 +44,9 @@ export class HomeBooksComponent implements OnInit {
       },
     },
   }
+  openServices()
+  {
+    this.router.navigate(['/services']);
+  }
 }
+
